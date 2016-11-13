@@ -1,554 +1,134 @@
 @charset "UTF-8";
 
+
 /*! Button */
-a.launch {
-	display: inline-block;
-	padding: 5px;
-	border-radius: 5px;
-	background: #333;
-	text-decoration: none;
-	white-space: nowrap; 
-	font-size: 11px;
-	color: #fff;}
-	a.launch span {
-		display: none; }
-	a.launch:hover span {
-		display: inline-block; 
-		padding-left: 5px;}
-
-a.storelink {
-	display: inline-block;
-	padding: 5px;
-	border-radius: 5px;
-	background: #1b926c;
-	text-decoration: none;
-	white-space: nowrap; 
-	font-size: 11px;
-	color: #fff;}
-	a.storelink span {
-		display: none; }
-	a.storelink:hover span {
-		display: inline-block; 
-		padding-left: 5px;}
-
-button.lang {
-	display: inline-block;
-	padding: 2px 5px;
-	border-radius: 5px;
-	background: #ccc;
-	text-decoration: none;
-	white-space: nowrap; 
-	font-size: 9px;
-	color: #fff;}
-	button.lang.on {
-		background: #333; }
-
-.langSelectBtn {
-	display: inline-block;
-	padding: 2px 5px;
-	border-radius: 5px;
-	background: #ccc;
-	text-decoration: none;
-	white-space: nowrap; 
-	font-size: 9px;
-	color: #fff;}
-	.langSelectBtn.on {
-		background: #333; }
+a.launch{padding:5px;background:#333;font-size:11px}
+a.launch span,a.storelink span{display:none}
+a.launch:hover span,a.storelink:hover span{display:inline-block;padding-left:5px}
+.langSelectBtn,a.launch,a.storelink,button.lang{display:inline-block;border-radius:5px;text-decoration:none;white-space:nowrap;color:#fff}
+a.storelink{background:#1b926c;padding:5px;font-size:11px}
+button.lang{margin-left:4px}
+.langSelectBtn.on,button.lang.on{background:#333}
+.langSelectBtn,button.lang{padding:2px 5px;background:#ccc;font-size:9px}
 
 
 /*! Sneaker Item : Module */
-.sneakerItem {
-	box-sizing: border-box;
-	padding: 10px;
-	width: 240px;
-	height: 390px; }
-	.sneakerItem figure > a {
-		display: block; }
-	.sneakerItem figure figcaption {
-		padding-top: 10px;
-		text-align: right;
-		font-size: 11px;
-		color: #666; }
-	.sneakerItem figure.origin > a {
-		padding: 10px; 
-		background: #f5f5f5;}
-	.sneakerItem figure.origin img {
-		width: 200px;
-		height: 200px; }
-	.sneakerItem figure.side > a, .sneakerItem figure.spec > a {
-		background: #fff; }
-	.sneakerItem figure.side img, .sneakerItem figure.spec img {
-		width: 220px;
-		height: 220px; }
-	.sneakerItem dl {
-		position: relative;
-		margin-top: 5px;
-		padding-top: 10px; 
-		padding-bottom: 6px;
-		border-top: 1px solid #ccc;}
-		.sneakerItem dl dt {
-			font-weight: 700;
-			font-size: 13px;
-			color: #333;
-			line-height: 1.3; }
-		.sneakerItem dl dd {
-			padding-top: 5px;
-			font-size: 12px;
-			color: #666;
-			line-height: 1.3; }
-		.sneakerItem dl dd.link {
-			position: absolute;
-			right: 0;
-			bottom: 0; }
-	.sneakerItem .eng dl.en {
-		display: block; }
-	.sneakerItem .eng dl.ko {
-		display: none; }
-	.sneakerItem .eng .lang.engBtn {
-		background: #333; }
-	.sneakerItem .kor dl.en {
-		display: none; }
-	.sneakerItem .kor dl.ko {
-		display: block; }
-	.sneakerItem .kor .lang.korBtn {
-		background: #333; }
-	.sneakerItem .langSec {
-		margin-top: -15px; }
+.sneakerItem{box-sizing:border-box;padding:10px;width:240px;height:390px}
+.sneakerItem .eng dl.en,.sneakerItem figure>a{display:block}
+.sneakerItem figure figcaption{padding-top:10px;text-align:right;font-size:11px;color:#666}
+.sneakerItem figure.origin>a{padding:10px;background:#f5f5f5}
+.sneakerItem figure.origin img{width:200px;height:200px}
+.sneakerItem figure.side>a,.sneakerItem figure.spec>a{background:#fff}
+.sneakerItem figure.side img,.sneakerItem figure.spec img{width:220px;height:220px}
+.sneakerItem dl{position:relative;margin-top:5px;padding-top:10px;padding-bottom:6px;border-top:1px solid #ccc}
+.sneakerItem dl dt{font-weight:700;font-size:13px;color:#333;line-height:1.3}
+.sneakerItem dl dd{padding-top:5px;font-size:12px;color:#666;line-height:1.3}
+.sneakerItem dl dd.link{position:absolute;right:0;bottom:0}
+.sneakerItem .eng dl.ko,.sneakerItem .kor dl.en{display:none}
+.sneakerItem .eng .lang.engBtn,.sneakerItem .kor .lang.korBtn{background:#333}
+.sneakerItem .kor dl.ko{display:block}
+.sneakerItem .langSec{margin-top:-15px}
+
 
 /*! Sneaker Item Base List : Commpont */
-.sneakerListSec {
-	box-sizing: border-box;
-	padding-left: 70px;
-	width: 100%;
-	overflow: hidden;
-	background-color: #fff; }
-	.sneakerListSec .sneakerItem {
-		float: left;
-		margin-left: 15px; }
+.sneakerListSec{box-sizing:border-box;padding-left:70px;width:100%;overflow:hidden}
+.sneakerListSec .sneakerItem{float:left;margin-left:15px}
+body{background-color:#000}
+#sneakerContent,.sneakerListSec{background-color:#fff}
 
-
-
-body {
-	background-color: #000; }
 
 /*! LAYOUT */
-#sneakerSearch {
-	position: fixed;
-	top: 40px;
-	left: -200px;
-	z-index: 10;
-	width: 260px;
-	height: 100%;
-	border-right: 10px solid #7d1d23; 
-	background: #191817;
-	transition: left 600ms;}
-	#sneakerSearch .menu {
-		text-align: right; }
+#sneakerSearch{position:fixed;top:40px;left:-200px;z-index:10;width:260px;height:100%;border-right:10px solid #7d1d23;background:#191817;transition:left 600ms}
+#sneakerSearch .menu{text-align:right}
+.sneakerArchiveSec{padding-top:40px;width:100%}
 
-.sneakerArchiveSec {
-	padding-top: 40px;
-	width: 100%; }
 
 /*! 검색영역 */
-.search {
-	text-align: center; 
-	color: #fff;}
-	.search .search-brand {
-		float: right;
-		width: 20%;
-		overflow: hidden; }
-		.search .search-brand li {
-			position: relative;
-			float: left;
-			width: 100%;
-			height: 50px;
-			text-align: center;
-			text-align: center; }
-			.search .search-brand li > div {
-				width: 50px;
-				height: 50px;
-				background-position: 50% 0;
-				background-size: cover; 
-				background-repeat: no-repeat;}
-			.search .search-brand li a {
-				display: inline-block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				padding-top: 13px;
-				width: 100%;
-				font-size: 22px;
-				opacity: 0; 
-				cursor: pointer;}
-		.search .search-brand li:hover > div {
-			opacity: 0.6; }
-		.search .search-brand li:hover a {
-			opacity: 0.8; }
-		.search .search-brand li.no1 > div {
-			background-image: url("../images/common/jordan1.png"); }
-		.search .search-brand li.no2 > div {
-			background-image: url("../images/common/jordan2.png"); }
-		.search .search-brand li.no3 > div {
-			background-image: url("../images/common/jordan3.png"); }
-		.search .search-brand li.no4 > div {
-			background-image: url("../images/common/jordan4.png"); }
-		.search .search-brand li.no5 > div {
-			background-image: url("../images/common/jordan5.png"); }
-		.search .search-brand li.no6 > div {
-			background-image: url("../images/common/jordan6.png"); }
-		.search .search-brand li.no7 > div {
-			background-image: url("../images/common/jordan7.png"); }
-		.search .search-brand li.no8 > div {
-			background-image: url("../images/common/jordan8.png"); }
-		.search .search-brand li.no9 > div {
-			background-image: url("../images/common/jordan9.png"); }
-		.search .search-brand li.no10 > div {
-			background-image: url("../images/common/jordan10.png"); }
-		.search .search-brand li.no11 > div {
-			background-image: url("../images/common/jordan11.png"); }
-		.search .search-brand li.no12 > div {
-			background-image: url("../images/common/jordan12.png"); }
-		.search .search-brand li.no13 > div {
-			background-image: url("../images/common/jordan13.png"); }
-		.search .search-brand li.no14 > div {
-			background-image: url("../images/common/jordan14.png"); }
-		.search .search-brand li.no15 > div {
-			background-image: url("../images/common/jordan15.png"); }
-		.search .search-brand li.no16 > div {
-			background-image: url("../images/common/jordan16.png"); }
-		.search .search-brand li.no17 > div {
-			background-image: url("../images/common/jordan17.png"); }
-		.search .search-brand li.no18 > div {
-			background-image: url("../images/common/jordan18.png"); }
-		.search .search-brand li.no19 > div {
-			background-image: url("../images/common/jordan19.png"); }
-		.search .search-brand li.no20 > div {
-			background-image: url("../images/common/jordan20.png"); }
-		.search .search-brand li.no21 > div {
-			background-image: url("../images/common/jordan21.png"); }
-		.search .search-brand li.no22 > div {
-			background-image: url("../images/common/jordan22.png"); }
-		.search .search-brand li.no23 > div {
-			background-image: url("../images/common/jordan23.png"); }
-		.search .search-brand li.no24 > div {
-			background-image: url("../images/common/jordan24.png"); }
-		.search .search-brand li.no25 > div {
-			background-image: url("../images/common/jordan25.png"); }
-		.search .search-brand li.no26 > div {
-			background-image: url("../images/common/jordan26.png"); }
-		.search .search-brand li.no27 > div {
-			background-image: url("../images/common/jordan27.png"); }
-		.search .search-brand li.no28 > div {
-			background-image: url("../images/common/jordan28.png"); }
-		.search .search-brand li.no29 > div {
-			background-image: url("../images/common/jordan29.png"); }
-		.search .search-brand li.no30 > div {
-			background-image: url("../images/common/jordan30.png"); }
-		.search .search-brand li.no31 > div {
-			background-image: url("../images/common/jordan31.png"); }
-		.search .search-brand li.no15 {
-			display: none; }
-		.search .search-brand li.no16 {
-			display: none; }
-		.search .search-brand li.no17 {
-			display: none; }
-		.search .search-brand li.no18 {
-			display: none; }
-		.search .search-brand li.no19 {
-			display: none; }
-		.search .search-brand li.no20 {
-			display: none; }
-		.search .search-brand li.no21 {
-			display: none; }
-		.search .search-brand li.no22 {
-			display: none; }
-		.search .search-brand li.no23 {
-			display: none; }
-		.search .search-brand li.no24 {
-			display: none; }
-		.search .search-brand li.no25 {
-			display: none; }
-		.search .search-brand li.no26 {
-			display: none; }
-		.search .search-brand li.no27 {
-			display: none; }
-		.search .search-brand li.no28 {
-			display: none; }
-		.search .search-brand li.no29 {
-			display: none; }
-		.search .search-brand li.no30 {
-			display: none; }
-		.search .search-brand li.no31 {
-			display: none; }
-
-.over .search .search-brand {
-	float: none;
-	width: 100%; }
-	.over .search .search-brand li {
-		width: 20%; }
-	.over .search .search-brand li.no1 {
-		display: block; }
-	.over .search .search-brand li.no2 {
-		display: block; }
-	.over .search .search-brand li.no3 {
-		display: block; }
-	.over .search .search-brand li.no4 {
-		display: block; }
-	.over .search .search-brand li.no5 {
-		display: block; }
-	.over .search .search-brand li.no6 {
-		display: block; }
-	.over .search .search-brand li.no7 {
-		display: block; }
-	.over .search .search-brand li.no8 {
-		display: block; }
-	.over .search .search-brand li.no9 {
-		display: block; }
-	.over .search .search-brand li.no10 {
-		display: block; }
-	.over .search .search-brand li.no11 {
-		display: block; }
-	.over .search .search-brand li.no12 {
-		display: block; }
-	.over .search .search-brand li.no13 {
-		display: block; }
-	.over .search .search-brand li.no14 {
-		display: block; }
-	.over .search .search-brand li.no15 {
-		display: block; }
-	.over .search .search-brand li.no16 {
-		display: block; }
-	.over .search .search-brand li.no17 {
-		display: block; }
-	.over .search .search-brand li.no18 {
-		display: block; }
-	.over .search .search-brand li.no19 {
-		display: block; }
-	.over .search .search-brand li.no20 {
-		display: block; }
-	.over .search .search-brand li.no21 {
-		display: block; }
-	.over .search .search-brand li.no22 {
-		display: block; }
-	.over .search .search-brand li.no23 {
-		display: block; }
-	.over .search .search-brand li.no24 {
-		display: block; }
-	.over .search .search-brand li.no25 {
-		display: block; }
-	.over .search .search-brand li.no26 {
-		display: block; }
-	.over .search .search-brand li.no27 {
-		display: block; }
-	.over .search .search-brand li.no28 {
-		display: block; }
-	.over .search .search-brand li.no29 {
-		display: block; }
-	.over .search .search-brand li.no30 {
-		display: block; }
-	.over .search .search-brand li.no31 {
-		display: block; }
-
-.over #sneakerSearch {
-	left: 0; }
+.search{text-align:center;color:#fff}
+.search .search-brand{float:right;width:20%;overflow:hidden}
+.search .search-brand li{position:relative;float:left;width:100%;height:50px;text-align:center}
+.search .search-brand li>div{width:50px;height:50px;background-position:50% 0;background-size:cover;background-repeat:no-repeat}
+.search .search-brand li a{display:inline-block;position:absolute;top:0;left:0;padding-top:13px;width:100%;text-decoration:none;font-size:22px;color:#fff;opacity:0;cursor:pointer}
+.search .search-brand li:hover>div{opacity:.6}
+.search .search-brand li:hover a{opacity:.8}
+.search .search-brand li.no1>div{background-image:url(../images/common/jordan1.png)}
+.search .search-brand li.no2>div{background-image:url(../images/common/jordan2.png)}
+.search .search-brand li.no3>div{background-image:url(../images/common/jordan3.png)}
+.search .search-brand li.no4>div{background-image:url(../images/common/jordan4.png)}
+.search .search-brand li.no5>div{background-image:url(../images/common/jordan5.png)}
+.search .search-brand li.no6>div{background-image:url(../images/common/jordan6.png)}
+.search .search-brand li.no7>div{background-image:url(../images/common/jordan7.png)}
+.search .search-brand li.no8>div{background-image:url(../images/common/jordan8.png)}
+.search .search-brand li.no9>div{background-image:url(../images/common/jordan9.png)}
+.search .search-brand li.no10>div{background-image:url(../images/common/jordan10.png)}
+.search .search-brand li.no11>div{background-image:url(../images/common/jordan11.png)}
+.search .search-brand li.no12>div{background-image:url(../images/common/jordan12.png)}
+.search .search-brand li.no13>div{background-image:url(../images/common/jordan13.png)}
+.search .search-brand li.no14>div{background-image:url(../images/common/jordan14.png)}
+.search .search-brand li.no15>div{background-image:url(../images/common/jordan15.png)}
+.search .search-brand li.no16>div{background-image:url(../images/common/jordan16.png)}
+.search .search-brand li.no17>div{background-image:url(../images/common/jordan17.png)}
+.search .search-brand li.no18>div{background-image:url(../images/common/jordan18.png)}
+.search .search-brand li.no19>div{background-image:url(../images/common/jordan19.png)}
+.search .search-brand li.no20>div{background-image:url(../images/common/jordan20.png)}
+.search .search-brand li.no21>div{background-image:url(../images/common/jordan21.png)}
+.search .search-brand li.no22>div{background-image:url(../images/common/jordan22.png)}
+.search .search-brand li.no23>div{background-image:url(../images/common/jordan23.png)}
+.search .search-brand li.no24>div{background-image:url(../images/common/jordan24.png)}
+.search .search-brand li.no25>div{background-image:url(../images/common/jordan25.png)}
+.search .search-brand li.no26>div{background-image:url(../images/common/jordan26.png)}
+.search .search-brand li.no27>div{background-image:url(../images/common/jordan27.png)}
+.search .search-brand li.no28>div{background-image:url(../images/common/jordan28.png)}
+.search .search-brand li.no29>div{background-image:url(../images/common/jordan29.png)}
+.search .search-brand li.no30>div{background-image:url(../images/common/jordan30.png)}
+.search .search-brand li.no31>div{background-image:url(../images/common/jordan31.png)}
+.search .search-brand li.no15,.search .search-brand li.no16,.search .search-brand li.no17,.search .search-brand li.no18,.search .search-brand li.no19,.search .search-brand li.no20,.search .search-brand li.no21,.search .search-brand li.no22,.search .search-brand li.no23,.search .search-brand li.no24,.search .search-brand li.no25,.search .search-brand li.no26,.search .search-brand li.no27,.search .search-brand li.no28,.search .search-brand li.no29,.search .search-brand li.no30,.search .search-brand li.no31{display:none}
+.over .search .search-brand{float:none;width:100%}
+.over .search .search-brand li{width:20%}
+.over .search .search-brand li.no1,.over .search .search-brand li.no10,.over .search .search-brand li.no11,.over .search .search-brand li.no12,.over .search .search-brand li.no13,.over .search .search-brand li.no14,.over .search .search-brand li.no15,.over .search .search-brand li.no16,.over .search .search-brand li.no17,.over .search .search-brand li.no18,.over .search .search-brand li.no19,.over .search .search-brand li.no2,.over .search .search-brand li.no20,.over .search .search-brand li.no21,.over .search .search-brand li.no22,.over .search .search-brand li.no23,.over .search .search-brand li.no24,.over .search .search-brand li.no25,.over .search .search-brand li.no26,.over .search .search-brand li.no27,.over .search .search-brand li.no28,.over .search .search-brand li.no29,.over .search .search-brand li.no3,.over .search .search-brand li.no30,.over .search .search-brand li.no31,.over .search .search-brand li.no4,.over .search .search-brand li.no5,.over .search .search-brand li.no6,.over .search .search-brand li.no7,.over .search .search-brand li.no8,.over .search .search-brand li.no9{display:block}
+.over #sneakerSearch{left:0}
 
 
 /*! RESET */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box; 
-	margin: 0;
-	padding: 0;
-	outline: none;
-	border: 0;
-	vertical-align: baseline;}
-
-html {
-	height: 101%; }
-
-body {
-	font-size: 62.5%;
-	font-family: "Noto Sans KR", sans-serif; 
-	line-height: 1;}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block; }
-
-ol, ul {
-	list-style: none; }
-
-blockquote, q {
-	quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-	content: none; }
-
-strong {
-	font-weight: bold; }
-
-table {
-	border-spacing: 0; 
-	border-collapse: collapse;}
-
-img {
-	max-width: 100%; 
-	border: 0;}
-
-dt {
-	display: block; }
-
-[role="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box; }
-
-/* Reset `button` and button-style `input` default styles */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-	padding: 0;
-	overflow: visible;
-	border: 0;
-	background: none;
-	/* cursor: default; */
-	font: inherit;
-	color: inherit;
-	line-height: normal;
-
-	-webkit-appearance: button;
-	/* for input */
-	-webkit-user-select: none;
-	/* for button */
-	-moz-user-select: none;
-	-ms-user-select: none; }
-
-input[type="button"], button {
-	cursor: pointer; }
-
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-	padding: 0; 
-	border: 0;}
-
-/* Make `a` like a button */
-[role="button"] {
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	white-space: pre;
-	color: inherit;
-	cursor: default;
-
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none; }
-
-i {
-	font-style: normal; }
-
-
-
-
-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1000; 
-	margin: 0;
-	padding: 10px 0;
-	width: 100%;
-	border-bottom: 1px solid #ccc;
-	background-color: #fff;
-	text-align: center;
-	font-size: 20px;
-	line-height: 1;}
-
-footer {
-	margin: 0;
-	padding: 10px 0;
-	border-top: 1px solid #ccc;
-	background: #000; 
-	text-align: center;
-	font-size: 12px;
-	color: #fff;
-	line-height: 1;}
-
-footer a {
-	color: #fff; }
-
-#sneakerContent {
-	padding-top: 40px;
-	font-size: 16px;
-	font-family: "Noto Sans KR", sans-serif; }
-	#sneakerContent a {
-		color: #ff6600; }
-	#sneakerContent h1 {
-		margin: 0; 
-		padding: 0;}
-	#sneakerContent h1 .enname {
-		display: block;
-		padding-bottom: 10px;
-		font-size: 14px; }
-	#sneakerContent h1 .koname {
-		display: block;
-		font-size: 30px; }
-	#sneakerContent .sneakerContent {
-		margin: 0 auto;
-		padding-top: 20px;
-		width: 500px; }
-	#sneakerContent .image-source {
-		padding-bottom: 20px;
-		text-align: right;
-		font-size: 12px; }
-	#sneakerContent .image-more {
-		background-color: #000; }
-		#sneakerContent .image-more button {
-			display: inline-block;
-			width: 100%;
-			height: 26px;
-			font-size: 12px; 
-			color: #fff;}
-			#sneakerContent .image-more button * {
-				vertical-align: top; }
-			#sneakerContent .image-more button i {
-				font-size: 18px; }
-			#sneakerContent .image-more button span {
-				display: inline-block;
-				padding-top: 3px; 
-				padding-left: 5px;}
-		#sneakerContent .image-more #oimg {
-			display: none; }
-	#sneakerContent .spec-info {
-		padding: 20px 0; }
-	#sneakerContent .spec-dl dl {
-		margin: 0; 
-		padding-top: 15px;}
-	#sneakerContent .spec-dl dt {
-		padding-bottom: 5px;
-		color: #666; }
-	#sneakerContent .spec-dl dd {
-		padding-bottom: 3px; }
-	#sneakerContent .description {
-		padding-top: 15px; 
-		border-bottom: 1px dashed #ccc;}
-		#sneakerContent .description p {
-			padding-bottom: 15px;
-			line-height: 1.4; }
-	#sneakerContent .market-info {
-		padding: 20px 0; 
-		border-top: 1px dashed #ccc;}
-		#sneakerContent .market-info dl {
-			margin: 0; 
-			padding-top: 15px;}
-		#sneakerContent .market-info dt {
-			padding-bottom: 5px;
-			color: #666; }
-		#sneakerContent .market-info dd {
-			padding-bottom: 3px; }
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,form,h1,h2,h3,h4,h5,h6,hgroup,html,i,iframe,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:none;border:0;vertical-align:baseline}
+img{margin:0;padding:0;max-width:100%}
+footer,header,img{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:none;border:0;vertical-align:baseline}
+html{height:101%}
+body{font-size:62.5%;font-family:"Noto Sans KR",sans-serif;line-height:1}
+article,aside,details,dt,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:none}
+strong{font-weight:700}
+table{border-spacing:0;border-collapse:collapse}
+[role=button],button,input[type=button],input[type=reset],input[type=submit]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+button,input[type=button],input[type=reset],input[type=submit]{padding:0;overflow:visible;border:0;background:0 0;font:inherit;color:inherit;line-height:normal;-webkit-appearance:button;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}
+button,input[type=button]{cursor:pointer}
+button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
+[role=button]{display:inline-block;text-align:center;text-decoration:none;white-space:pre;color:inherit;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}
+i{font-style:normal}
+footer,header{margin:0;padding:10px 0;text-align:center;line-height:1}
+header{position:fixed;top:0;left:0;z-index:1000;width:100%;border-bottom:1px solid #ccc;background-color:#fff;font-size:20px}
+footer{border-top:1px solid #ccc;background:#000;font-size:12px}
+footer,footer a{color:#fff}
+#sneakerContent{padding-top:40px;font-size:16px;font-family:"Noto Sans KR",sans-serif}
+#sneakerContent a{color:#f60}
+#sneakerContent h1{margin:0;padding:0}
+#sneakerContent h1 .enname{display:block;padding-bottom:10px;font-size:14px}
+#sneakerContent h1 .koname{display:block;font-size:30px}
+#sneakerContent .sneakerContent{margin:0 auto;padding-top:20px;padding-right:10px;padding-left:70px;max-width:700px}
+#sneakerContent .sideShot{text-align:center}
+#sneakerContent .image-source{padding-bottom:20px;text-align:right;font-size:12px}
+#sneakerContent .image-more{background-color:#000}
+#sneakerContent .image-more button{display:inline-block;width:100%;height:26px;font-size:12px;color:#fff}
+#sneakerContent .image-more button *{vertical-align:top}
+#sneakerContent .image-more button i{font-size:18px}
+#sneakerContent .image-more button span{display:inline-block;padding-top:3px;padding-left:5px}
+#sneakerContent .image-more #oimg{display:none;background-color:#fff;text-align:center}
+#sneakerContent .spec-info{padding:20px 0}
+#sneakerContent .market-info dl,#sneakerContent .spec-dl dl{margin:0;padding-top:15px}
+#sneakerContent .market-info dt,#sneakerContent .spec-dl dt{padding-bottom:5px;color:#666}
+#sneakerContent .market-info dd,#sneakerContent .spec-dl dd{padding-bottom:3px}
+#sneakerContent .description{padding-top:15px;border-bottom:1px dashed #ccc}
+#sneakerContent .description p{padding-bottom:15px;line-height:1.4}
+#sneakerContent .market-info{padding:20px 0;border-top:1px dashed #ccc}

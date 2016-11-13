@@ -3,6 +3,9 @@
 body {
 	background-color: #000; }
 
+#sneakerContent {
+	background-color: #fff; }
+
 /*! LAYOUT */
 #sneakerSearch {
 	position: fixed;
@@ -49,8 +52,10 @@ body {
 				left: 0;
 				padding-top: 13px;
 				width: 100%;
+				text-decoration: none; 
 				font-size: 22px;
-				opacity: 0; 
+				color: #fff;
+				opacity: 0;
 				cursor: pointer;}
 		.search .search-brand li:hover > div {
 			opacity: 0.6; }

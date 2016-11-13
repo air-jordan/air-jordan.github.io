@@ -9,13 +9,14 @@ $(function(){
 
     $( "#sneakerSearch" ).load( "./searchDOM.html", function( response, status, xhr ) {
         if ( status == "error" ) {
-            $("#sneakerSearch").load("../searchDOM.html");
+            $("#sneakerSearch").load("../brand/searchDOM.html");
         };
     });
 });
 
 function view(){
-    $("#sneaker").toggleClass("over");
+    $("#sneaker,#sneakerContent").toggleClass("over");
+
 }
 
 function loadimg(style,num){

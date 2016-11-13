@@ -45,7 +45,11 @@ footer a {
 	#sneakerContent .sneakerContent {
 		margin: 0 auto;
 		padding-top: 20px;
-		width: 500px; }
+		padding-right: 10px;
+		padding-left: 70px;
+		max-width: 700px; }
+	#sneakerContent .sideShot {
+		text-align: center; }
 	#sneakerContent .image-source {
 		padding-bottom: 20px;
 		text-align: right;
@@ -67,7 +71,9 @@ footer a {
 				padding-top: 3px; 
 				padding-left: 5px;}
 		#sneakerContent .image-more #oimg {
-			display: none; }
+			display: none;
+			background-color: #fff;
+			text-align: center; }
 	#sneakerContent .spec-info {
 		padding: 20px 0; }
 	#sneakerContent .spec-dl dl {

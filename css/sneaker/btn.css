@@ -32,6 +32,7 @@ a.storelink {
 
 button.lang {
 	display: inline-block;
+	margin-left: 4px;
 	padding: 2px 5px;
 	border-radius: 5px;
 	background: #ccc;
