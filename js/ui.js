@@ -7,14 +7,16 @@ $(function(){
         $(this).attr("src",src);
     });
 
-    $("#sneakerSearch").load("./searchDOM.html");
+    $( "#sneakerSearch" ).load( "./searchDOM.html", function( response, status, xhr ) {
+        if ( status == "error" ) {
+            $("#sneakerSearch").load("../searchDOM.html");
+        };
+    });
 });
 
 function view(){
-    $(".notview").hide();
+    $("#sneaker").toggleClass("over");
 }
-
-
 
 function loadimg(style,num){
     var style = style+"";

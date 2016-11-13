@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*! Sneaker Item : Module */
+.sneakerItem {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 240px;
+	height: 390px; }
+	.sneakerItem figure > a {
+		display: block; }
+	.sneakerItem figure figcaption {
+		padding-top: 10px;
+		text-align: right;
+		font-size: 11px;
+		color: #666; }
+	.sneakerItem figure.origin > a {
+		padding: 10px; 
+		background: #f5f5f5;}
+	.sneakerItem figure.origin img {
+		width: 200px;
+		height: 200px; }
+	.sneakerItem figure.side > a, .sneakerItem figure.spec > a {
+		background: #fff; }
+	.sneakerItem figure.side img, .sneakerItem figure.spec img {
+		width: 220px;
+		height: 220px; }
+	.sneakerItem dl {
+		position: relative;
+		margin-top: 5px;
+		padding-top: 10px; 
+		padding-bottom: 6px;
+		border-top: 1px solid #ccc;}
+		.sneakerItem dl dt {
+			font-weight: 700;
+			font-size: 13px;
+			color: #333;
+			line-height: 1.3; }
+		.sneakerItem dl dd {
+			padding-top: 5px;
+			font-size: 12px;
+			color: #666;
+			line-height: 1.3; }
+		.sneakerItem dl dd.link {
+			position: absolute;
+			right: 0;
+			bottom: 0; }
+	.sneakerItem .eng dl.en {
+		display: block; }
+	.sneakerItem .eng dl.ko {
+		display: none; }
+	.sneakerItem .eng .lang.engBtn {
+		background: #333; }
+	.sneakerItem .kor dl.en {
+		display: none; }
+	.sneakerItem .kor dl.ko {
+		display: block; }
+	.sneakerItem .kor .lang.korBtn {
+		background: #333; }
+	.sneakerItem .langSec {
+		margin-top: -15px; }
+
+/*! Sneaker Item Base List : Commpont */
+.sneakerListSec {
+	box-sizing: border-box;
+	padding-left: 70px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff; }
+	.sneakerListSec .sneakerItem {
+		float: left;
+		margin-left: 15px; }

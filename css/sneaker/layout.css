@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+body {
+	background-color: #000; }
+
+/*! LAYOUT */
+#sneakerSearch {
+	position: fixed;
+	top: 40px;
+	left: -200px;
+	z-index: 10;
+	width: 260px;
+	height: 100%;
+	border-right: 10px solid #7d1d23; 
+	background: #191817;
+	transition: left 600ms;}
+	#sneakerSearch .menu {
+		text-align: right; }
+
+.sneakerArchiveSec {
+	padding-top: 40px;
+	width: 100%; }
+
+/*! 검색영역 */
+.search {
+	text-align: center; 
+	color: #fff;}
+	.search .search-brand {
+		float: right;
+		width: 20%;
+		overflow: hidden; }
+		.search .search-brand li {
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			text-align: center; }
+			.search .search-brand li > div {
+				width: 50px;
+				height: 50px;
+				background-position: 50% 0;
+				background-size: cover; 
+				background-repeat: no-repeat;}
+			.search .search-brand li a {
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				padding-top: 13px;
+				width: 100%;
+				font-size: 22px;
+				opacity: 0; 
+				cursor: pointer;}
+		.search .search-brand li:hover > div {
+			opacity: 0.6; }
+		.search .search-brand li:hover a {
+			opacity: 0.8; }
+		.search .search-brand li.no1 > div {
+			background-image: url("../images/common/jordan1.png"); }
+		.search .search-brand li.no2 > div {
+			background-image: url("../images/common/jordan2.png"); }
+		.search .search-brand li.no3 > div {
+			background-image: url("../images/common/jordan3.png"); }
+		.search .search-brand li.no4 > div {
+			background-image: url("../images/common/jordan4.png"); }
+		.search .search-brand li.no5 > div {
+			background-image: url("../images/common/jordan5.png"); }
+		.search .search-brand li.no6 > div {
+			background-image: url("../images/common/jordan6.png"); }
+		.search .search-brand li.no7 > div {
+			background-image: url("../images/common/jordan7.png"); }
+		.search .search-brand li.no8 > div {
+			background-image: url("../images/common/jordan8.png"); }
+		.search .search-brand li.no9 > div {
+			background-image: url("../images/common/jordan9.png"); }
+		.search .search-brand li.no10 > div {
+			background-image: url("../images/common/jordan10.png"); }
+		.search .search-brand li.no11 > div {
+			background-image: url("../images/common/jordan11.png"); }
+		.search .search-brand li.no12 > div {
+			background-image: url("../images/common/jordan12.png"); }
+		.search .search-brand li.no13 > div {
+			background-image: url("../images/common/jordan13.png"); }
+		.search .search-brand li.no14 > div {
+			background-image: url("../images/common/jordan14.png"); }
+		.search .search-brand li.no15 > div {
+			background-image: url("../images/common/jordan15.png"); }
+		.search .search-brand li.no16 > div {
+			background-image: url("../images/common/jordan16.png"); }
+		.search .search-brand li.no17 > div {
+			background-image: url("../images/common/jordan17.png"); }
+		.search .search-brand li.no18 > div {
+			background-image: url("../images/common/jordan18.png"); }
+		.search .search-brand li.no19 > div {
+			background-image: url("../images/common/jordan19.png"); }
+		.search .search-brand li.no20 > div {
+			background-image: url("../images/common/jordan20.png"); }
+		.search .search-brand li.no21 > div {
+			background-image: url("../images/common/jordan21.png"); }
+		.search .search-brand li.no22 > div {
+			background-image: url("../images/common/jordan22.png"); }
+		.search .search-brand li.no23 > div {
+			background-image: url("../images/common/jordan23.png"); }
+		.search .search-brand li.no24 > div {
+			background-image: url("../images/common/jordan24.png"); }
+		.search .search-brand li.no25 > div {
+			background-image: url("../images/common/jordan25.png"); }
+		.search .search-brand li.no26 > div {
+			background-image: url("../images/common/jordan26.png"); }
+		.search .search-brand li.no27 > div {
+			background-image: url("../images/common/jordan27.png"); }
+		.search .search-brand li.no28 > div {
+			background-image: url("../images/common/jordan28.png"); }
+		.search .search-brand li.no29 > div {
+			background-image: url("../images/common/jordan29.png"); }
+		.search .search-brand li.no30 > div {
+			background-image: url("../images/common/jordan30.png"); }
+		.search .search-brand li.no31 > div {
+			background-image: url("../images/common/jordan31.png"); }
+		.search .search-brand li.no15 {
+			display: none; }
+		.search .search-brand li.no16 {
+			display: none; }
+		.search .search-brand li.no17 {
+			display: none; }
+		.search .search-brand li.no18 {
+			display: none; }
+		.search .search-brand li.no19 {
+			display: none; }
+		.search .search-brand li.no20 {
+			display: none; }
+		.search .search-brand li.no21 {
+			display: none; }
+		.search .search-brand li.no22 {
+			display: none; }
+		.search .search-brand li.no23 {
+			display: none; }
+		.search .search-brand li.no24 {
+			display: none; }
+		.search .search-brand li.no25 {
+			display: none; }
+		.search .search-brand li.no26 {
+			display: none; }
+		.search .search-brand li.no27 {
+			display: none; }
+		.search .search-brand li.no28 {
+			display: none; }
+		.search .search-brand li.no29 {
+			display: none; }
+		.search .search-brand li.no30 {
+			display: none; }
+		.search .search-brand li.no31 {
+			display: none; }
+
+.over .search .search-brand {
+	float: none;
+	width: 100%; }
+	.over .search .search-brand li {
+		width: 20%; }
+	.over .search .search-brand li.no1 {
+		display: block; }
+	.over .search .search-brand li.no2 {
+		display: block; }
+	.over .search .search-brand li.no3 {
+		display: block; }
+	.over .search .search-brand li.no4 {
+		display: block; }
+	.over .search .search-brand li.no5 {
+		display: block; }
+	.over .search .search-brand li.no6 {
+		display: block; }
+	.over .search .search-brand li.no7 {
+		display: block; }
+	.over .search .search-brand li.no8 {
+		display: block; }
+	.over .search .search-brand li.no9 {
+		display: block; }
+	.over .search .search-brand li.no10 {
+		display: block; }
+	.over .search .search-brand li.no11 {
+		display: block; }
+	.over .search .search-brand li.no12 {
+		display: block; }
+	.over .search .search-brand li.no13 {
+		display: block; }
+	.over .search .search-brand li.no14 {
+		display: block; }
+	.over .search .search-brand li.no15 {
+		display: block; }
+	.over .search .search-brand li.no16 {
+		display: block; }
+	.over .search .search-brand li.no17 {
+		display: block; }
+	.over .search .search-brand li.no18 {
+		display: block; }
+	.over .search .search-brand li.no19 {
+		display: block; }
+	.over .search .search-brand li.no20 {
+		display: block; }
+	.over .search .search-brand li.no21 {
+		display: block; }
+	.over .search .search-brand li.no22 {
+		display: block; }
+	.over .search .search-brand li.no23 {
+		display: block; }
+	.over .search .search-brand li.no24 {
+		display: block; }
+	.over .search .search-brand li.no25 {
+		display: block; }
+	.over .search .search-brand li.no26 {
+		display: block; }
+	.over .search .search-brand li.no27 {
+		display: block; }
+	.over .search .search-brand li.no28 {
+		display: block; }
+	.over .search .search-brand li.no29 {
+		display: block; }
+	.over .search .search-brand li.no30 {
+		display: block; }
+	.over .search .search-brand li.no31 {
+		display: block; }
+
+.over #sneakerSearch {
+	left: 0; }

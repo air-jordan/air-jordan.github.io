@@ -1,0 +1,24 @@
+{
+  "name": "dstyleGulpSetting",
+  "version": "1.0.4",
+  "description": "",
+  "author": "dstyle(dstyle0210@gmail.com)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-csso": "^2.0.0",
+    "gulp-folders": "^1.1.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "request": "^2.78.0",
+    "run-sequence": "^1.2.2",
+    "underscore": "^1.8.3"
+  }
+}
