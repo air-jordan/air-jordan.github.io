@@ -18,6 +18,12 @@ $(function(){
         $("#sneaker,#sneakerContent").toggleClass("over");
         return false;
     });
+    $(".engBtn").on("click",function(){
+        $(this).parent().parent().removeClass("kor").addClass("eng");
+    });
+    $(".korBtn").on("click",function(){
+        $(this).parent().parent().removeClass("eng").addClass("kor");
+    });
 });
 
 function loadimg(style,num){
