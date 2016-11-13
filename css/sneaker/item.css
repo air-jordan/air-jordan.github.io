@@ -61,7 +61,6 @@
 /*! Sneaker Item Base List : Commpont */
 .sneakerListSec {
 	box-sizing: border-box;
-	padding-left: 70px;
 	width: 100%;
 	overflow: hidden;
 	background-color: #fff; }

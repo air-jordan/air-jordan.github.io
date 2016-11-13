@@ -12,12 +12,13 @@ $(function(){
             $("#sneakerSearch").load("../brand/searchDOM.html");
         };
     });
+
+    // 메뉴 이벤트
+    $("#menu").on("click",function(){
+        $("#sneaker,#sneakerContent").toggleClass("over");
+        return false;
+    });
 });
-
-function view(){
-    $("#sneaker,#sneakerContent").toggleClass("over");
-
-}
 
 function loadimg(style,num){
     var style = style+"";
