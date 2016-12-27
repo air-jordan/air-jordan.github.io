@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Dstyle's Sneaker Archive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sneaker.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.27/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+<body id="sneaker">
+<header class="sneakerHeader">Dstyle's Sneaker Archive
+    <div style="float:right;">
+        <button type="button" class="langSelectBtn" v-on:click="allLang('eng')">eng</button>
+        <button type="button" class="langSelectBtn" v-on:click="allLang('kor')">kor</button>
+        <button type="button" class="langSelectBtn" v-on:click="originImage">originImage</button>
+        <button type="button" class="langSelectBtn" v-on:click="sideImage">sideImage</button>
+    </div>
+</header>
+<section class="sneakerArchiveSec" id="sneakerList">
+    <div class="sneakerSortSec" style="display:none;">
+        <div class="menuBtn">
+            <button type="button" onclick="$('#sneakerList').toggleClass('over');"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        </div>
+        <div class="brandSec">
+            <h2>Brand</h2>
+            <button type="button" v-on:click="viewAll">viewAll</button>
+            <ul id="sortBtn"></ul>
+            <ul id="sortDateBtn"></ul>
+        </div>
+    </div>
+    <div class="sneakerListSec">
+        <article class="sneakerItem" v-for="sneaker in sneakers" v-show="sneaker.show">
+            <div class="{{sneaker.type}}">
+                <figure class="side">
+                    <a href="image.html?style={{sneaker.style}}_{{sneaker.code}}" target="_blank"><img data-src="images/{{ sneaker.brand }}{{ sneaker.no }}/s_{{ sneaker.image }}" alt="{{sneaker.style}}-{{sneaker.code}} , {{sneaker.enname}} '{{sneaker.ennick}}'" /></a>
+                    <figcaption>{{sneaker.style}}-{{sneaker.code}} / {{sneaker.year}}</figcaption>
+                </figure>
+                <div class="langSec">
+                    <button type="button" class="lang engBtn" v-on:click="lang($index,'eng')">EN</button>
+                    <button type="button" class="lang korBtn" v-on:click="lang($index,'kor')">KO</button>
+                    <a href="#" class="lang shopBtn">TIST</a>
+                    <a href="sneakers/{{sneaker.style}}-{{sneaker.code}}.html" class="lang shopBtn">HTML</a>
+                </div>
+                <dl class="en">
+                    <dt>{{sneaker.enname}} <i v-if="sneaker.ennick">'{{sneaker.ennick}}'</i></dt>
+                    <dd>{{sneaker.encolor}}</dd>
+                    <dd>{{sneaker.endate}}</dd>
+                    <dd>${{sneaker.enprice}}</dd>
+                    <dd class="link">
+                        <a href="{{sneaker.enluanch}}" class="launch" target="_blank" v-if="sneaker.enluanch"><i class="fa fa-external-link" aria-hidden="true"></i><span>LAUNCH</span></a>
+                    </dd>
+                    <dd class="shops" style="display:none;">
+                        <a href="http://www.sneakersnstuff.com/en/search/searchbytext?key={{sneaker.style}}-{{sneaker.code}}" target="_blank">SNS</a>
+                        <a href="https://www.ruvilla.com/catalogsearch/result/?q={{sneaker.style}}-{{sneaker.code}}" target="_blank">ruvilla</a>
+                    </dd>
+                </dl>
+                <dl class="ko">
+                    <dt>{{sneaker.koname}} <i v-if="sneaker.konick">'{{sneaker.konick}}'</i></dt>
+                    <dd>{{sneaker.kocolor}}</dd>
+                    <dd>{{sneaker.kodate}}</dd>
+                    <dd v-if="sneaker.koprice">{{sneaker.koprice}}원</dd>
+                    <dd class="link">
+                        <a href="{{sneaker.koluanch}}" class="launch" target="_blank" v-if="sneaker.koluanch"><i class="fa fa-external-link" aria-hidden="true"></i><span>LAUNCH</span></a>
+                        <a href="http://www.nike.co.kr/goods/showGoodsDetail.lecs?goodsNo={{sneaker.store}}&colorOptionValueCode={{sneaker.style}}-{{sneaker.code}}" class="storelink" target="_blank" v-if="sneaker.store"><i class="fa fa-paper-plane" aria-hidden="true"></i><span>STORE LINK</span></a>
+                    </dd>
+                    <dd class="shops" style="display:none;">
+                        <a href="http://www.nike.co.kr/search/showSearch.lecs?research={{sneaker.style}}" target="_blank">NIKE</a>
+                        <a href="http://www.footsell.co.kr/product/search.html?keyword={{sneaker.style}}-{{sneaker.code}}" target="_blank">풋셀스토어</a>
+                        <a href="http://www.player.co.kr/v3/search/search.php?q={{sneaker.style}}" target="_blank">선수촌</a>
+                        <a href="http://www.popo-mall.com/shop/goods/goods_search.php?searched=Y&skey=all&sword={{sneaker.style}}" target="_blank">포포몰</a>
+                        <a href="http://hoopcity.co.kr/shop/goods/goods_search.php?searched=Y&skey=all&sword={{sneaker.style}}-{{sneaker.code}}" target="_blank">훕시티</a>
+                        <a href="http://shopping.naver.com/search/all.nhn?query={{sneaker.style}}-{{sneaker.code}}" target="_blank">Naver</a>
+                    </dd>
+                </dl>
+            </div>
+        </article>
+    </div>
+</section>
+
+<script src="js/sneaker.js"></script>
+</body>
+</html>
+
