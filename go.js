@@ -1,4 +1,4 @@
-"var fs = require('fs');
+var fs = require('fs');
 var _ = require(""underscore"");
 var request = require(""request"");
 var url = ""https://spreadsheets.google.com/feeds/list/1pOlPpmQkwQhXSFMDx6wryFhvQL8tjf1gbbiJQLRvDPs/1/public/values?alt=json""
@@ -134,4 +134,4 @@ function makeTistoryHtml(sneaker){
     str += '</div>';
 
     return str;
-};"
+};
