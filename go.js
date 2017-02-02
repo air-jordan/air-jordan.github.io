@@ -101,7 +101,7 @@ function makeTistoryHtml(sneaker){
     str += '</div></div>';
     str += '</div>';
     str += '<div class="image-more"><button type="button" onclick="loadimg(\''+sneaker.style+'\',\''+sneaker.code+'\');"><i class="fa fa-sort-desc" aria-hidden="true"></i><span>Images More</span></button><div id="oimg"></div></div>';
-    if(sneaker.desc1!=""){
+    if(desc!=""){
         str += '<div class="description"><p>'+sneaker.kodesc1+'</p>'+((sneaker.kodesc2) ? '<p>'+sneaker.kodesc2+'</p>' : '')+'</div>';
         str += '<div class="description"><p>'+sneaker.endesc1+'</p>'+((sneaker.endesc2) ? '<p>'+sneaker.endesc2+'</p>' : '')+'</div>';
     };
